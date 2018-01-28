@@ -33,6 +33,12 @@ namespace PublishSubscribe.Consumer
                     // We've already created a fanout exchange and a queue. 
                     // Now we need to tell the exchange to send messages to our queue. 
                     // That relationship between exchange and a queue is called a binding.
+                    // This can be simply read as: the queue is interested in messages from this exchange.
+
+                    // Bindings can take an extra routingKey parameter.
+                    // The meaning of a routingKey depends on the exchange type. 
+                    // The fanout exchanges, simply ignored its value.
+
                     channel.QueueBind(
                         queue: queueName,
                         exchange: "logs",
