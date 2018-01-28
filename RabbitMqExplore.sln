@@ -3,17 +3,23 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27004.2002
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MessageProducer", "MessageProducer\MessageProducer.csproj", "{1AD9E4A7-803C-4167-8FE3-65638326B72F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MessageProducer", "MessageProducer\MessageProducer.csproj", "{1AD9E4A7-803C-4167-8FE3-65638326B72F}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SimpleQueue", "SimpleQueue", "{D35D9F58-61E0-4F39-9B7D-788E729EB0B8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MessageConsumer", "MessageConsumer\MessageConsumer.csproj", "{AFE15CD9-2F13-4A1E-BBEF-A6698B436BCC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MessageConsumer", "MessageConsumer\MessageConsumer.csproj", "{AFE15CD9-2F13-4A1E-BBEF-A6698B436BCC}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WorkQueue", "WorkQueue", "{F1EFF4BA-CDE3-433C-884D-AC1E20729F01}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WorkQueue.Producer", "WorkQueue.Producer\WorkQueue.Producer.csproj", "{FD48259E-4489-4A2E-AD19-EF02FF2EBD50}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WorkQueue.Producer", "WorkQueue.Producer\WorkQueue.Producer.csproj", "{FD48259E-4489-4A2E-AD19-EF02FF2EBD50}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WorkQueue.Consumer", "WorkQueue.Consumer\WorkQueue.Consumer.csproj", "{4858B6CC-615F-4362-90B1-A4282BCA1617}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WorkQueue.Consumer", "WorkQueue.Consumer\WorkQueue.Consumer.csproj", "{4858B6CC-615F-4362-90B1-A4282BCA1617}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PublishSubscribeQueue", "PublishSubscribeQueue", "{41BCC3F5-E193-4523-A37D-6DF0FB237E66}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PublishSubscribe.Producer", "PublishSubscribe.Producer\PublishSubscribe.Producer.csproj", "{989E2DC1-9138-462D-B609-9BE46A586845}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PublishSubscribe.Consumer", "PublishSubscribe.Consumer\PublishSubscribe.Consumer.csproj", "{EC0DBBE5-F0FC-4494-8C3B-ECA83AF52FE5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -37,6 +43,14 @@ Global
 		{4858B6CC-615F-4362-90B1-A4282BCA1617}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4858B6CC-615F-4362-90B1-A4282BCA1617}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4858B6CC-615F-4362-90B1-A4282BCA1617}.Release|Any CPU.Build.0 = Release|Any CPU
+		{989E2DC1-9138-462D-B609-9BE46A586845}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{989E2DC1-9138-462D-B609-9BE46A586845}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{989E2DC1-9138-462D-B609-9BE46A586845}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{989E2DC1-9138-462D-B609-9BE46A586845}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EC0DBBE5-F0FC-4494-8C3B-ECA83AF52FE5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EC0DBBE5-F0FC-4494-8C3B-ECA83AF52FE5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EC0DBBE5-F0FC-4494-8C3B-ECA83AF52FE5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EC0DBBE5-F0FC-4494-8C3B-ECA83AF52FE5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -46,6 +60,8 @@ Global
 		{AFE15CD9-2F13-4A1E-BBEF-A6698B436BCC} = {D35D9F58-61E0-4F39-9B7D-788E729EB0B8}
 		{FD48259E-4489-4A2E-AD19-EF02FF2EBD50} = {F1EFF4BA-CDE3-433C-884D-AC1E20729F01}
 		{4858B6CC-615F-4362-90B1-A4282BCA1617} = {F1EFF4BA-CDE3-433C-884D-AC1E20729F01}
+		{989E2DC1-9138-462D-B609-9BE46A586845} = {41BCC3F5-E193-4523-A37D-6DF0FB237E66}
+		{EC0DBBE5-F0FC-4494-8C3B-ECA83AF52FE5} = {41BCC3F5-E193-4523-A37D-6DF0FB237E66}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {93A1044A-9113-487D-8451-2DC680A4B66C}
